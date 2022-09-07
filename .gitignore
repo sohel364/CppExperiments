@@ -30,6 +30,8 @@
 *.exe
 *.out
 *.app
+x64/
+x86/
 
 # project files
 *.vs
