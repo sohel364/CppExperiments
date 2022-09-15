@@ -2,9 +2,14 @@
 
 void* operator new(size_t size)
 {
-	std::cout << size << std::endl;
-
+	std::cout << "Allocating memory of " << size << " Bytes" << std::endl;
 	return malloc(size);
+}
+
+void operator delete(void* memory, size_t size)
+{
+	std::cout << "Freed" << size << " Bytes" << std::endl;
+	free(memory);
 }
 
 struct MyClass
@@ -13,9 +18,11 @@ struct MyClass
 };
 
 int main()
-{
-	MyClass* obj = new MyClass();
-	std::unique_ptr<MyClass> obj1 = std::make_unique<MyClass>();
+{ 
+	{
+		MyClass* obj = new MyClass();
+	}
+
 	std::string name = "name";
 	int* value = new int(10);
 	std::cout << name << std::endl;
