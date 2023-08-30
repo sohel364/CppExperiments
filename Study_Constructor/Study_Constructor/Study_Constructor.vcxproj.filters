@@ -33,6 +33,9 @@
     <ClCompile Include="CommonBase.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SArray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Child3.h">
@@ -48,6 +51,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CommonBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SArray.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

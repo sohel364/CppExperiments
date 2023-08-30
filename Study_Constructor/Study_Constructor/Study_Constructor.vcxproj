@@ -144,6 +144,7 @@
     <ClCompile Include="Child3.cpp" />
     <ClCompile Include="CommonBase.cpp" />
     <ClCompile Include="MyBase.cpp" />
+    <ClCompile Include="SArray.cpp" />
     <ClCompile Include="Study_Constructor.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -152,6 +153,7 @@
     <ClInclude Include="Child3.h" />
     <ClInclude Include="CommonBase.h" />
     <ClInclude Include="MyBase.h" />
+    <ClInclude Include="SArray.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
