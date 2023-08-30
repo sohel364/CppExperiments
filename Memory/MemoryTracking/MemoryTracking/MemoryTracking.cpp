@@ -1,6 +1,6 @@
 #include <iostream>
 
-static size_t AllocatedSize = 0;
+static size_t AllocatedSize = 0;  /*  global static variable stored in Initialized Data Segment in 
 
 void* operator new(size_t size)
 {
@@ -26,10 +26,13 @@ struct MyClass
 
 int main()
 { 
+	static int BSSTest=4; /* Uninitialized static variable stored in bss */
+
 	{
 		MyClass* obj = new MyClass();
 	}
 
 	std::string name = "name";
 	int* value = new int(10);
+	return 0;
 }
