@@ -14,6 +14,12 @@ double Calcualte(double x = dNaN, float y = fNaN)
     return result;
 }
 
+// c++ 20 feature. This is a evetually a tempalted function now
+bool Compare(auto val1, auto val2)
+{
+    return val1 <=> val2 > 0; 
+}
+
 /// <summary>Main entry-point for this application.</summary>
 /// <returns>Exit-code for the process - 0 for success, else an error code.</returns>
 int main()
@@ -40,4 +46,6 @@ int main()
     Print(Calcualte()); // Prints nan
     Print(Calcualte(12.01, 10.01)); // double to float warning for float argument
     Print(Calcualte(12.01, (float)10.01));
+
+    Compare(20, 10) ? Print("TRUE") : Print("FALSE");
 }
