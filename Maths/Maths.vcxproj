@@ -129,6 +129,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Maths.cpp" />
+    <ClCompile Include="MathUtilsModuleInterface.ixx" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\CppExperiments\CommonUtils.h" />

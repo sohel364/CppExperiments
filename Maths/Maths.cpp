@@ -1,8 +1,13 @@
 #include <iostream>
 #include <Math.h>
 #include <string>
+#include <vector>
+#include <algorithm>
+#include <ranges>// c++ 20
 
 #include "../CppExperiments/CommonUtils.h"
+
+import MathUtilsModuleInterface;
 
 /// <summary>Calcualtes.</summary>
 /// <param name="x">(Optional) The x coordinate.</param>
@@ -48,4 +53,9 @@ int main()
     Print(Calcualte(12.01, (float)10.01));
 
     Compare(20, 10) ? Print("TRUE") : Print("FALSE");
+
+    // Range syntax : nice and easy to read syntax
+    std::vector data{ 11, 10, 13 };
+    std::ranges::sort(data);
+    Print(MyFunc());
 }
