@@ -1,9 +1,11 @@
 #include <iostream>
+#include <format>
 #include <Math.h>
 #include <string>
 #include <vector>
 #include <algorithm>
 #include <ranges>// c++ 20
+
 
 #include "../CppExperiments/CommonUtils.h"
 
@@ -58,4 +60,7 @@ int main()
     std::vector data{ 11, 10, 13 };
     std::ranges::sort(data);
     Print(MyFunc());
+
+    std::vector<int> values{ 1,2,3,4,10 };
+    std::cout << std::format("Average : {}", CalcualteAvrg(values)) << std::endl;
 }
