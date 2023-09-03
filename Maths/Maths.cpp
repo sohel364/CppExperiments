@@ -61,6 +61,8 @@ int main()
     std::ranges::sort(data);
     Print(MyFunc());
 
-    std::vector<int> values{ 1,2,3,4,10 };
+    std::vector<int> values{ 1, 2, 3, 4, 10 };
     std::cout << std::format("Average : {}", CalcualteAvrg(values)) << std::endl;
+    std::vector<double> fValues{ 1.4, 2.1, 3.3, 4.2, 10.0 };
+    std::cout << "Average : " << CalcualteAvrg(fValues) << std::endl;
 }
