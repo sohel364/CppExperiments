@@ -20,6 +20,13 @@ constexpr double CalcualteAvrg(std::vector<T> const& vec)
 	return sum / vec.size();
 }
 
+// A function template that accepts two arguments of the same type
+export template <std::same_as<int> T>
+bool CheckSameAs(T x, T y) {
+	return true;
+}
+
+
 std::string MyFunc()
 {
 	return "My function from the module is called";
