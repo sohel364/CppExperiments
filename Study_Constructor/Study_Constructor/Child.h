@@ -10,7 +10,13 @@ public:
     std::string m_localStr = "child local string";
 
 public:
-    void Test() override;
+    std::string FileName() const
+    {
+        return m_fileName;
+    }
+
+private:
+    std::string m_fileName{ "testFileChild.txt" };
 };
 
 

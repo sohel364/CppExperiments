@@ -1,6 +1,8 @@
 #include "pch.h"
 #include "CppUnitTest.h"
 #include "../CppExperiments/CommonUtils.h"
+#include "../Study_Constructor/Study_Constructor/MyBase.h"
+#include "../Study_Constructor/Study_Constructor/Child.h"
 #include "../Study_Constructor/Study_Constructor/SArray.h"
 
 #include <iostream>
@@ -36,6 +38,16 @@ namespace UnitTests
 		{	
 			SArray<string, 5> testArray;
 			Assert::AreEqual(5, testArray.GetSize());
+		}
+	};
+
+	TEST_CLASS(FileNameTest)
+	{
+	public:
+		TEST_METHOD(Ge)
+		{
+			std::unique_ptr<Child> childUnique{ std::make_unique<Child>() };
+			Assert::IsTrue("testFileChild.txt" == childUnique->FileName());
 		}
 	};
 }

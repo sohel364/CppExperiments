@@ -23,6 +23,9 @@ public:
 	{
 		std::cout << "This is abstract" << std::endl;
 	}
+
+protected:
+	std::string m_fileName{"testFileBase.txt"};
 };
 
 template<typename CCLass>

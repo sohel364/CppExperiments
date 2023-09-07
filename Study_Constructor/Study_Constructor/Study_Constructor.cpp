@@ -14,4 +14,6 @@ int main()
 
 	MyBase<Child2>* myObject2 = new Child2();
 	myObject2->Test();
+
+	std::unique_ptr<Child> childUnique{ std::make_unique<Child>() };
 }
