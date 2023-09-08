@@ -48,6 +48,7 @@ namespace UnitTests
 		{
 			std::unique_ptr<Child> childUnique{ std::make_unique<Child>() };
 			Assert::IsTrue("testFileChild.txt" == childUnique->FileName());
+			Assert::IsFalse("test.txt" == childUnique->FileName());
 		}
 	};
 }
