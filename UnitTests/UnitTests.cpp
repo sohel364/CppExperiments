@@ -29,6 +29,13 @@ namespace UnitTests
 
 			Assert::AreEqual(L"Test", widestr.c_str());
 		}
+
+		TEST_METHOD(TestContains)
+		{
+			std::map<std::string, int> studentMap = { {"Simon", 1}, {"Jack", 2}, {"Richard", 3} };
+			Assert::IsTrue(ContainsInMap<std::string, int>(studentMap, "Simon"));
+			Assert::IsFalse(ContainsInMap<std::string, int>(studentMap, "InvLidName"));
+		}
 	};
 
 	TEST_CLASS(ArrayTest)
