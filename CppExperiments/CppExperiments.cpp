@@ -27,4 +27,10 @@ int main()
         std::cout << "Found" << std::endl;
     else
         std::cout << "Not Found" << std::endl;
+
+    std::map<int, int> intMap = { {1, 1}, {2, 2}, {3, -10} };
+    if (ContainsInMap<int, int>(intMap, -10))
+        std::cout << "Found" << std::endl;
+    else
+        std::cout << "Not Found" << std::endl;
 }
