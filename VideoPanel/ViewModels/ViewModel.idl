@@ -1,0 +1,13 @@
+namespace ViewModels
+{
+    [default_interface]
+    runtimeclass ViewModel
+    {
+        ViewModel();
+        Int32 Input1;
+        Int32 Input2;
+        Int32 Output;        
+        void CalculateOutput();
+        String Status();
+    }
+}

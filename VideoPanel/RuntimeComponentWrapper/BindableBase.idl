@@ -1,0 +1,10 @@
+namespace RuntimeComponentWrapper
+{
+	[bindable]
+	[default_interface]
+	unsealed runtimeclass BindableBase : Microsoft.UI.Xaml.DependencyObject, Microsoft.UI.Xaml.Data.INotifyPropertyChanged
+	{
+		BindableBase();
+		protected void RaisePropertyChanged(String propertyName);
+	}
+}

@@ -1,0 +1,16 @@
+import "BindableBase.idl";
+
+namespace RuntimeComponentWrapper
+{
+    [bindable]
+    [default_interface]
+    runtimeclass MyViewModel : BindableBase
+    {
+        MyViewModel();
+        Int32 Input1;
+        Int32 Input2;
+        String Output;
+        String Message;
+        void CalculateOutput();
+    }
+}

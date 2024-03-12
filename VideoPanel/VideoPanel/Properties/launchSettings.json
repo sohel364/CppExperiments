@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "VideoPanel (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "VideoPanel (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
