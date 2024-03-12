@@ -12,14 +12,17 @@ public:
     // Create a container widget with fixed size
     auto tableContainer = std::make_unique<Wt::WContainerWidget>();
     tableContainer->resize(400, 300); // Same size as root container
-    tableContainer->setOverflow(Wt::Overflow::Scroll); // Enable scrolling
-
-    tableContainer->mouseWheel().connect([&](Wt::WMouseEvent event) {      
-      if (event.wheelDelta() > 0)
-        //Wt::log("info") << "Scrolled down by " << event.viewportHeight() << " pixels";
-        Wt::log("info") << "Scrolled up";
-      else
+    tableContainer->setOverflow(Wt::Overflow::Scroll, Wt::Orientation::Vertical); // Enable scrolling
+    
+    tableContainer->scrolled().connect([&](Wt::WScrollEvent event) {      
+      if (event.scrollY() > 0)
+      {
         Wt::log("info") << "Scrolled down";
+        Wt::log("info") << "Scrolled down by " << event.viewportHeight() << " pixels";
+        Wt::log("info") << "Scrolled down by " << tableContainer->scrollLeft() << " pixels";
+      }
+      else
+        Wt::log("info") << "Scrolled up";
       });
 
     auto table = tableContainer->addWidget(std::make_unique<Wt::WTable>());
