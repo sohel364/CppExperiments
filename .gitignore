@@ -38,3 +38,5 @@ x86/
 
 /WittyTableTest/Debug
 /VideoPanel/packages
+/VideoPanel/VideoPanel/obj
+/VideoPanel/WinUITest/obj
