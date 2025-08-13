@@ -22,7 +22,8 @@ public:
     {
         //const auto timePointT = std::chrono::system_clock::to_time_t(timePoint);
 
-        time_t current_time;
+        // convert the given time point to a time_t value and format it
+        const std::time_t current_time = std::chrono::system_clock::to_time_t(timePoint);
         std::wstringstream stream;
         stream << std::put_time(std::localtime(&current_time), c_formatISO8601);
         return stream.str();
