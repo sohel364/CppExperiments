@@ -11,6 +11,13 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RuntimeComponentWrapper", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoPanel", "VideoPanel\VideoPanel.csproj", "{75327BD6-AE04-11B5-518F-584288559DB1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "COM", "COM\COM.vcxproj", "{F9BF9559-8D53-9022-C49E-512279D2A97E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "COMPS", "COMPS\COMPS.vcxproj", "{3CD2F064-E01B-84D1-20CB-F8D6769E9148}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F9BF9559-8D53-9022-C49E-512279D2A97E} = {F9BF9559-8D53-9022-C49E-512279D2A97E}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM64 = Debug|ARM64
@@ -81,6 +88,24 @@ Global
 		{75327BD6-AE04-11B5-518F-584288559DB1}.Release|x86.ActiveCfg = Release|x86
 		{75327BD6-AE04-11B5-518F-584288559DB1}.Release|x86.Build.0 = Release|x86
 		{75327BD6-AE04-11B5-518F-584288559DB1}.Release|x86.Deploy.0 = Release|x86
+		{F9BF9559-8D53-9022-C49E-512279D2A97E}.Debug|ARM64.ActiveCfg = Debug|x64
+		{F9BF9559-8D53-9022-C49E-512279D2A97E}.Debug|ARM64.Build.0 = Debug|x64
+		{F9BF9559-8D53-9022-C49E-512279D2A97E}.Debug|x64.ActiveCfg = Debug|x64
+		{F9BF9559-8D53-9022-C49E-512279D2A97E}.Debug|x64.Build.0 = Debug|x64
+		{F9BF9559-8D53-9022-C49E-512279D2A97E}.Debug|x86.ActiveCfg = Debug|Win32
+		{F9BF9559-8D53-9022-C49E-512279D2A97E}.Debug|x86.Build.0 = Debug|Win32
+		{F9BF9559-8D53-9022-C49E-512279D2A97E}.Release|ARM64.ActiveCfg = Release|x64
+		{F9BF9559-8D53-9022-C49E-512279D2A97E}.Release|ARM64.Build.0 = Release|x64
+		{F9BF9559-8D53-9022-C49E-512279D2A97E}.Release|x64.ActiveCfg = Release|x64
+		{F9BF9559-8D53-9022-C49E-512279D2A97E}.Release|x64.Build.0 = Release|x64
+		{F9BF9559-8D53-9022-C49E-512279D2A97E}.Release|x86.ActiveCfg = Release|Win32
+		{F9BF9559-8D53-9022-C49E-512279D2A97E}.Release|x86.Build.0 = Release|Win32
+		{3CD2F064-E01B-84D1-20CB-F8D6769E9148}.Debug|ARM64.ActiveCfg = Debug|x64
+		{3CD2F064-E01B-84D1-20CB-F8D6769E9148}.Debug|x64.ActiveCfg = Debug|x64
+		{3CD2F064-E01B-84D1-20CB-F8D6769E9148}.Debug|x86.ActiveCfg = Debug|Win32
+		{3CD2F064-E01B-84D1-20CB-F8D6769E9148}.Release|ARM64.ActiveCfg = Release|x64
+		{3CD2F064-E01B-84D1-20CB-F8D6769E9148}.Release|x64.ActiveCfg = Release|x64
+		{3CD2F064-E01B-84D1-20CB-F8D6769E9148}.Release|x86.ActiveCfg = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
